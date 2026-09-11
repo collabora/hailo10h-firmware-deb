@@ -1,0 +1,12 @@
+#!/usr/bin/make -f
+
+include /usr/share/dpkg/pkg-info.mk
+
+%:
+	dh $@
+
+FW_URL := https://hailo-hailort.s3.eu-west-2.amazonaws.com/Hailo10H/$(DEB_VERSION_UPSTREAM)/FW/hailo10h_fw.tar.gz
+
+get-orig-source:
+	wget -O ../hailo10h_fw.tar.gz "$(FW_URL)"
+	mk-origtargz ../hailo10h_fw.tar.gz

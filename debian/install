@@ -1,0 +1,4 @@
+fitImage /lib/firmware/hailo/hailo10h/
+image-fs /lib/firmware/hailo/hailo10h/
+*.bin    /lib/firmware/hailo/hailo10h/
+*.signed /lib/firmware/hailo/hailo10h/

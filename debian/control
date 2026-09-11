@@ -1,0 +1,15 @@
+Source: hailo10h-firmware
+Section: kernel
+Maintainer: Andrej Shadura <andrewsh@debian.org>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.7.4
+Rules-Requires-Root: no
+Homepage: https://hailo.ai/
+
+Package: firmware-hailo10h
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Description: firmware for the Hailo-10H AI accelerator
+ This package contains the proprietary firmware images required to
+ boot and operate the Hailo-10H NPU.
